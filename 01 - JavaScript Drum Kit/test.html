@@ -63,9 +63,11 @@
      */
     function playSound(e){
         // audio 获取audio标签的data-key的值。ES6语法`字符串 ${ 变量、属性名 } `
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);//获取audio一行
+        console.log(audio);
         //key
-        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`div[data-key="${e.keyCode}"]`);//获取div一块
+        console.log(key);
         //判断有没有取到audio
         if(!audio){
           return;
