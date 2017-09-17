@@ -83,9 +83,9 @@
     // 方法一 较复杂但一般
     /*
     var totalyears = 0;
-    totalyears = inventors.map(inventor => inventor.passed -inventor.year).reduce(pre.cur){
+    totalyears = inventors.map(inventor => inventor.passed -inventor.year).reduce(function(pre.cur){
       return pre + cur;
-    },0}//设初值为0
+    },0);//设初值为0
     */
     // 方法二
     // const totalyears = inventors.reduce( (total,cur) => total += (cur.passed-cur.year) , 0);
