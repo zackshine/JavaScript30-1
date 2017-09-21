@@ -36,6 +36,7 @@ function displayMatches() {
   const regex = new RegExp(this.value, 'gi');
   const html = matchCities.map(place => {
     const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
+    console.log(cityName);
     const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);
     return `
       <li>
